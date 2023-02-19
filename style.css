@@ -1,0 +1,389 @@
+
+.mainWrapper{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     width: 1440px;
+     height: 1024px;
+     
+     background: #FFFFFF;
+}
+h1{
+    font-size: 25px;
+}
+h2{
+    font-weight: 100;
+}
+.dashboard{
+    
+    display: flex;
+    position: absolute;
+    width: 1155px;
+    height: 895px;
+    left: 250px;
+    top: 100px;
+}
+.left{
+    flex: 70%;
+    margin: -2px -3px;
+}
+.popularGames{
+    width: 765px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+.game{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    height: 245px;
+    width: 238px;
+
+    border-radius: 20px;
+}
+
+.s1{
+    display: flex;
+    justify-content: left;
+    margin: -8px 0px;
+    flex-direction: row;
+}
+.title{
+    color: #787686;
+    padding: 0px 0px;
+    margin: 0px 41px 0px 17px;
+}
+.stats{
+    color: #787686;
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0px 0px 16px;
+    justify-content: space-between;
+
+}
+#likes{
+    color: #787686;
+    margin: 0px 26px 0px -8px;
+}
+.thumbnail img {
+    margin: 16px 14px;
+    height: 141px;
+}
+.s2{
+    color: #787686;
+    padding: 0px 0px 0px 0px;
+    margin: -11px -5px -14px 17px;
+}
+.s2 h6{
+    font-weight: 100;
+    padding: -2px -8px -7px 0px;
+    margin: 19px 20px 20px 0px;
+}
+.s3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.game:hover{
+    background: #301C57;
+    
+
+}
+.game:hover .s2{
+    color: white;
+}
+.game:hover .stats{
+    color: white;
+}
+.game:hover #likes{
+    color: white;
+}
+.game:hover .title{
+    color: white;
+}
+.game:hover #downloadButton{
+    
+    cursor: pointer;    
+    background-color: #301C57;
+}
+
+#market{
+    margin: 0px 0px 0px 14px;
+}
+#downloadButton{
+    
+    border: none;
+    margin: -14px 15px 0px 0px;
+}
+.right{
+    font-weight: 200;
+    font-size: larger;
+    color: white;
+    flex: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 17px 9px;
+    padding: 14px 27px;
+    border-radius: 20px;
+    background: #301C57;
+}
+.right img{
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px;
+    width: 325px;
+    height: 215px;
+}
+.bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.bar .im1{
+    margin: 0px 0px 0px 0px;
+}
+.bar img{
+    height: 10px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+#ratingsAwards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#stars{
+    margin: 8px -10px 0px 0px;
+    border: 3px solid #533391;
+    border-radius: 50%;
+}
+#starText{
+    margin: 8px 10px 0px 0px;
+    padding: -2px 10px;
+}
+#awardText{
+    margin: 8px 10px 0px 0px;
+    padding: -2px 10px;
+}
+#awards{
+    margin: 8px -10px 0px 0px;
+    border: 3px solid #533391;
+    border-radius: 50%;
+}
+#ratingsAwards img{
+    padding: 3px 3px;
+    margin: 5px 5px;
+    width: 26px;
+    height: 26px;
+}
+
+.promo{
+    
+    margin: 20px;
+    background-color: lightblue;
+    width: 723px;
+    height: 271px;
+    left: 285px;
+    top: 117px;
+}
+
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 250px;
+    height: 1024px;
+    left: 0px;
+    top: 0px;
+
+}
+.logo{
+    margin: 29px 30px;
+    width: 152px;
+    height: 42px;
+}
+.icon{
+    margin: 32px 30px;
+    color: grey;
+    width: 152px;
+    height: 42px;
+    
+
+}
+.pages{
+    padding: none;
+    margin: 37px -24px;
+}
+.pagesList{
+    padding: none;
+    margin: none;
+    width: 100px;
+    height: 300px;
+    list-style: none;
+    
+}
+.pagesList li{
+    cursor: pointer;
+    color: #787686;
+    display: flex;
+    width: 216px;
+    height: 66px;
+    align-items: center;
+    justify-content: left;
+    border-radius: 10px;
+
+}
+.pagesList li:hover{
+    width: 216px;
+    height: 86px;
+    background-color: #a6a4b2;
+    color: white;
+}
+.logout{
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 394px 0px 0px 39px;
+    width: 154px;
+    height: 47px;
+    justify-content: center;
+}
+.logout:hover{
+    background-color:#787686;
+    color: white;
+}
+.logout img{
+    margin:25px 16px 25px 2px;
+}
+.icon{
+    margin: none;
+    width: 17px;
+    height: 17px;
+}
+#Dashboard{
+    color: #FFFFFF;
+    background: #4B0ACE;
+    border-radius: 15px;
+    width: 216px;
+    height: 86px;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 1440px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+
+}
+.searchContainer{
+    margin: 0px ;
+    height: 56px;
+    width: 324px;
+    padding: 0px 0px;
+}
+#searchBar{
+    border: none;
+    margin: 20px 256px;
+    width: 633px;
+    height: 56px;
+}
+
+#searchBtn{
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    color: rgb(0, 0, 0);
+     position: absolute;
+    width: 40px;
+    height: 16px;
+    left: 840px;
+    top: 42px;
+}
+#iconsearch{
+    position: absolute;
+width: 16px;
+height: 16px;
+left: 856px;
+top: 42px;
+
+}
+.userDetails{
+    display: flex;
+    margin: 1px 752px;
+    justify-content: left;
+    padding: 45px 10px;
+}
+.navIcons{
+    cursor: pointer;
+    height: 27px;
+    padding: 0px 29px;
+}
+
+
+#userImg img{
+    cursor: pointer;
+    width: 47px;
+    height: 47px;
+    margin: -12px 25px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+#userImg img:hover{
+    width: 60px;
+    height: 60px;
+}
+
+.promo{
+    display: flex;
+    flex-direction: row;
+    background: #4B0ACE;
+    border-radius: 20px;
+    width: 723px;
+    height: 271px;
+}
+.promo .text{
+    color: white;
+    padding: 27px 27px;
+    height: 112px;
+    width: 353px;
+}
+.promo .text h1{
+    font-size: 30px;
+    margin: -17px -10px 35px 0px;
+    padding: 0px 0px;
+}
+.promo .image{
+    padding: 10px 10px;
+    height: 100 px;
+    width: 100px;
+
+}
+.promo .text .button{
+    border: none;
+    cursor: pointer;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 182px;
+    height: 52px;
+    background: #FFA910;
+}
+.promo .text .button:hover{
+    width: 192px;
+    height: 62px;
+}
+.promo .text .button h3{
+    font-weight: 500;
+    margin: 11px 13px;
+}
